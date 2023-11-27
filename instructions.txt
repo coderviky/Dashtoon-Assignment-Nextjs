@@ -1,0 +1,27 @@
+1. create next app
+> npx create-next-app __appname__
+
+2. add typescript to project - change file extension .js to .tsx
+> yarn add -D typescript @types/node @types/react
+
+=====>> Tailwind Css
+1. install & init
+> yarn add -D tailwindcss postcss autoprefixer
+> npx tailwindcss init -p
+
+2. Configure template paths - tailwind.config.js
+> content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}", ] 
+
+3. Add the Tailwind directives - global.css
+> @tailwind base; @tailwind components; @tailwind utilities;
+
+4.
+> yarn add classnames react-icons
+
+
+=====>> Framer motion
+1. add 
+> yarn add framer-motion
+
+2. add motion for div
+> <motion.div animate={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: 20 }} exit={{ opacity: 0, x: -20 }} transition={{ duration: 0.15 }} >
